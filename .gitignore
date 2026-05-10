@@ -1,0 +1,8 @@
+# Secrets
+Config.swift
+
+# Xcode
+build/
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+.DS_Store
