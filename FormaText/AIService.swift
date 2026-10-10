@@ -12,8 +12,9 @@ class AIService: ObservableObject {
     // Configurable constant to control the number of variations requested
     let numberOfOptions = 3
 
-    // Initialize the Generative Model with the Gemini 3 Flash engine
-    private let model = GenerativeModel(name: "gemini-3-flash-preview", apiKey: "AIzaSyC4eNNq_EGlH07eg7y7mtT_sLhqWOBnIkw")
+    // Initialize the Generative Model with the Gemini 3 Flash engine.
+    // The key lives in FormaText/Config.swift, which is git-ignored (see Config.example.swift).
+    private let model = GenerativeModel(name: "gemini-3-flash-preview", apiKey: Config.geminiAPIKey)
     
     /// Sends a prompt to the AI model to rewrite text in a specific tone.
     /// - Parameters:
